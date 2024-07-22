@@ -1,0 +1,138 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ae2727;
+    color: rgb(105, 46, 46);
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: rgb(40, 81, 142);
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    transition: border-bottom 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+main {
+    padding-top: 5rem; /* Adjust for the fixed header */
+}
+
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section:nth-child(odd) {
+    background-color: #fff;
+}
+
+.section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+    margin-bottom: 1.5rem;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.service {
+    padding: 1.5rem;
+    background-color: #c66868;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.service h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.service p {
+    color: #666;
+}
+
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #821717;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #c95454;
+    color: rgb(94, 25, 25);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+ 
