@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('main .section');
     const navList = document.getElementById('navbar');
 
-    // Build the navigation menu
+    // Build the navigation menu 
     sections.forEach((section, index) => {
         const li = document.createElement('li');
         const a = document.createElement('a');
